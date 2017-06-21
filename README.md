@@ -23,6 +23,6 @@ Things that I wish to add:
 
 GIF walkthrough is actually located in /demoGIT.gif 
 
-[DEMOGIF](demoGIF.gif)
+![DEMOGIF](demoGIF.gif)
 
 
