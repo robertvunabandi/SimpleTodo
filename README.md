@@ -1,4 +1,4 @@
-#SimpleTodo App  
+#SimpleTodo App
 
 Author: Robert M. Vunabandi  
 
