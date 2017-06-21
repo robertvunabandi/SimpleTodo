@@ -19,10 +19,10 @@ Things that I wish to add:
 * ADD PRIORITIES
 * SUB LISTS
 
-##Walkthrough
+## Walkthrough
 
 GIF walkthrough is actually located in /demoGIT.gif 
 
 ![DEMOGIF](demoGIF.gif)
 
-
+A phone video is also in ![demo.mp4](demo.mp4)
