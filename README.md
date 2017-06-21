@@ -25,4 +25,4 @@ GIF walkthrough is actually located in /demoGIT.gif
 
 ![DEMOGIF](demoGIF.gif)
 
-A phone video is also in ![demo.mp4](demo.mp4)
+A phone video is also in [demo.mp4](demo.mp4)
