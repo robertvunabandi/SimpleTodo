@@ -1,10 +1,10 @@
-#SimpleTodo App
+# SimpleTodo App
 
 Author: Robert M. Vunabandi  
 
 This is a basic to do app. Can add and remove items. More updates to (maybe) come...
 
-##Details
+## Details
 
 This took me from end of lunch up to 4:00PM. So, from 1:00PM to 4:00PM, that is about 3 hours.
 
@@ -23,6 +23,6 @@ Things that I wish to add:
 
 GIF walkthrough is actually located in /demoGIT.gif 
 
-! [DEMOGIF] (demoGIF.gif)
+[DEMOGIF](demoGIF.gif)
 
 
