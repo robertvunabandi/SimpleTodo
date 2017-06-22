@@ -1,5 +1,6 @@
 package com.codepath.simpletodo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> items;
     ArrayAdapter<String> itemsAdapter;
     ListView lvItems;
+
+    public final static int EDIT_REQUEST_CODE = 20;
+    public  final static String ITEM_TEXT = "itemText";
+    public  final static String ITEM_POSITION = "itemPosition";
     // called by android when the activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         // setup the listener on creation
         setupListViewListener();
+
+        //setupListEditListener();
     }
     //you can add other methods here
     public void onAddItem(View v) {
@@ -65,11 +72,36 @@ public class MainActivity extends AppCompatActivity {
                 itemsAdapter.notifyDataSetChanged();
                 // store the updated list
                 writeItems();
-                Log.i("MainActivity", "Removed item " + position);
+                Toast.makeText(getApplicationContext(), "Removed item " + position, Toast.LENGTH_SHORT).show();
+                // Log.i("MainActivity", "Removed item " + position);
                 // return true to tell the framework that the long click was consumed
                 return true;
             }
         });
+
+        lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Intent i = new Intent(MainActivity.this, EditActivity.class);
+                i.putExtra(ITEM_TEXT, items.get(position));
+                i.putExtra(ITEM_POSITION, position);
+                startActivity(i);
+            }
+        });
+        /*lvItems.setOnItemClickListener((parent, view, position, id) -> {
+            Intent i = new Intent(MainActivity.this, EditActivity.class);
+            i.putExtra(ITEM_TEXT, items.get(position));
+            i.putExtra(ITEM_POSITION, position);
+            startActivity(i);
+        });*/
+    }
+
+    public void launchComposeView(String before, String position) {
+        // first parameter is the context, second is the class of the activity to launch
+        Intent i = new Intent(MainActivity.this, EditActivity.class);
+        i.putExtra("content", before);
+        i.putExtra("position", position);
+        startActivity(i); // brings up the second activity
     }
 
     // returns the file in which the data is stored
