@@ -39,6 +39,8 @@ A phone video is also in [demo.mp4](demo.mp4)
 
 Understanding how the android app works was a bit challenging, but it's very elegant even though it does not all make sense. For some reason, I tried to "System.out.println" one of variables with "R.string.stringName", but that did not work for some reasons. Otherwise, the app was fun to build.
 
+I tried to implement the edit function but did not complete it. So, although it sends the user to another activity, it does not work...
+
 ## License
 
     Copyright [2017] [Robert M. Vunabandi]
