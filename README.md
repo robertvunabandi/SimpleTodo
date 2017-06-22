@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [ ] Click on a delete cross to delete instead of long press (which I thought was a bit annoying)
-* [ ] Show a message on delete
+* [X] Show a message on delete
 * [ ] Add priorities
 * [ ] Add sub lists
 
